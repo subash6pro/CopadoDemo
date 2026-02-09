@@ -32,4 +32,5 @@
         <type>Email</type>
         <unique>false</unique>
     </fields>
+    
 </CustomObject>
