@@ -23,14 +23,14 @@
         <type>Email</type>
         <unique>false</unique>
     </fields>
-    <fields>
-        <fullName>Field_Three__c</fullName>
-        <externalId>false</externalId>
-        <label>Field Three</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Email</type>
-        <unique>false</unique>
-    </fields>
-    
+    <validationRules>
+        <fullName>DemoValidationRuleOne</fullName>
+        <active>true</active>
+        <description>created for Demo.</description>
+        <errorConditionFormula>AND(
+ Field_One__c,
+ ISBLANK(Field_Two__c)
+)</errorConditionFormula>
+        <errorMessage>Please enter Field two if Field one is checked.</errorMessage>
+    </validationRules>
 </CustomObject>
