@@ -31,7 +31,7 @@
         <label>Field Four</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>text</type>
+        <type>Email</type>
         <unique>false</unique>
     </fields>
     <validationRules>
